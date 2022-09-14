@@ -12,13 +12,6 @@
 // Extras:
 // - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
 
-//Sonidos
-// let error = new Audio("../music/auch.mp3");
-// let win = new Audio("../music/clapclap.mp3");
-// let gameover = new Audio("../music/dameover.mp3");
-// let juego = new Audio("../music/eleccion.mp3");
-// let eleccion = new Audio("../music/juego.mp3");
-// let check = new Audio("../music/yes.mp3");
 
 var sfx = {
     error: new Howl({
