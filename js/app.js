@@ -248,27 +248,27 @@ function dibujarLetraIncorrecta(equivocada){
 
 var sfx = {
     error: new Howl({
-      src: ["../music/auch.mp3"],
+      src: ["music/auch.mp3"],
       volume: 0.3
     }),
     win: new Howl({
-      src: ["../music/clapclap.mp3"],
+      src: ["music/clapclap.mp3"],
       volume: 0.4
     }),
     gameover: new Howl({
-      src: ["../music/dameover.mp3"],
+      src: ["music/dameover.mp3"],
       volume: 0.2
     }),
     juego: new Howl({
-      src: ["../music/eleccion.mp3"],
+      src: ["music/eleccion.mp3"],
       volume: 0.1
     }),
     eleccion: new Howl({
-      src: ["../music/juego.mp3"],
+      src: ["music/juego.mp3"],
       volume: 0.2
     }),
     check: new Howl({
-      src: ["../music/yes.mp3"],
+      src: ["music/yes.mp3"],
       volume: 0.3
     })
   };
