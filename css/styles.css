@@ -1,0 +1,1068 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+html {
+    box-sizing: border-box; 
+    font-size: 62.5%; 
+}
+:root{
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0d7a09;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    --light-blue-100: #76d275;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+    --gray-100: #CED4D4;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+}
+
+
+/* Ahorcado - Celular - Mobile Firse */
+
+body{
+    position: relative;
+    width: 90%;
+    height: 667px;
+    background: #F3F5FC;
+    background-image: url(../img/vistas_2.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+}
+
+.vector{
+    position: absolute;
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+    background: #0A3871;
+    background-color: transparent;
+}
+
+header .titulo{
+    font-size: 1.6rem;
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: #FFFFFF;
+    padding: 1rem 1rem;
+    left: 6.5rem;
+    bottom: 1.5rem;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+
+.botonera_inicio{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 158px;
+
+    max-width: 32rem;
+    width: 28rem; 
+    margin: 0 auto;
+}
+
+.btn_iniciar{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 235px;
+    height: 105px;
+    left: 29px;
+    top: 281px;
+    background: #300a71b3;
+    border-radius: 24px;
+}
+
+.btn_agregar{
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 200px;
+    height: 67px;
+    left: 48px;
+    top: 402px;
+    border: 1px solid #71570ab3;
+    border-radius: 24px;
+}
+
+.input_palabra{
+    width: 260px;
+    height: 48px;
+    left: 16px;
+    top: 152px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.input_letra{
+    position: absolute;
+    width: 260px;
+    height: 48px;
+    left: 16px;
+    top: 152px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.info{
+    position: relative;
+    width: 3.43rem;
+    height: 4.8rem;
+    left: 1.6rem;
+    top: 15.2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 150%;
+    color: var(--dark-blue-300);
+}
+
+.input{
+    display: flex;
+    max-width: 60%;
+    height: 8rem;
+    top: 15.2rem;
+    margin: 0rem -4rem 0rem -2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 150%;
+    border: none;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 3.2rem;
+} 
+
+.input2{
+    display: flex;
+    position: relative;
+    max-width: 8%;
+    height: 2rem;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 150%;
+    border: none;
+    padding: 2rem;
+    top: -4rem;
+    left: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 3.2rem;
+} 
+
+.text_area{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+}
+
+.text_letra{
+    display: none;
+    justify-content: center;
+}
+
+.info_interno{
+    width: 30rem;
+    height: 1.8rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 150%;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    top: -3rem;
+    left: 2rem;
+    margin: 0.5rem 0rem 0rem;
+}
+
+.text_area .icono_exclamation{
+    width: 1.6rem;
+    height: 1.6rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.botonera_palabra{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: relative;
+    max-width: 33rem;
+    height: 158px;
+    top: -20px;
+    left: 1rem;
+    margin: 0 auto;
+}
+
+.botonera_palabra .btn_guardar{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    height: 67px;
+    background: #300a71b3;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.botonera_palabra .btn_cancelar{
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+div#div_ahorcado{
+    display: none;
+    width: 28rem;
+    border: 1px solid #ff000045;
+    height: 54rem;
+    justify-content: center;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(0 14 100 / 69%);
+}
+canvas {
+    width: 467px;
+    height: 500px;
+    margin-left: -15rem;
+    margin-top: 7rem;
+} 
+
+.container_figuras{
+    height: 1200px;
+    left: 860px;
+}
+.seccion_muneco{
+    position: absolute;
+    left: 44.68px;
+    top: 136px;
+    width: 100%;
+    height: 100%;
+}
+
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 36px;
+    top: 527px;
+
+}
+
+.botonera_juego{
+    display: none;
+    flex-direction: column;
+    padding: 0px;
+    gap: 24px;
+    position: relative;
+    height: 158px;
+    left: 8px; 
+    top: 0px;
+    max-width: 100rem;
+    width: 28rem;
+    margin: 0 auto;
+}
+
+.botonera_juego .btn_guardar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;   
+    height: 67px;
+    background: #300a71b3;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    justify-content: center;
+    max-width: 30rem;
+}
+.botonera_juego .btn_cancelar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    gap: 8px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    justify-content: center;
+    max-width: 30rem;
+}
+
+.winner{
+    border: 1px solid green;
+    display: none;
+    flex-direction: column;
+    padding: 6rem 4rem;
+    gap: 24px;
+    position: relative;
+    height: 100px;
+    left: 8px; 
+    top: 200px;
+    max-width: 100rem;
+    width: 20rem;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    background-color: rgba(1,100,0,0.4);
+}
+.winner p{
+    margin-top: -2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: #1c5924c2;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-family: 'Inter';
+}
+.winner .btn_guardar{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    background: rgba(0,120,0,0.7);
+}
+.loser{
+    border: 1px solid rgba(255, 0, 0, 0.384);
+    display: none;
+    flex-direction: column;
+    padding: 6rem 4rem;
+    gap: 24px;
+    position: relative;
+    height: 100px;
+    left: 8px; 
+    top: 200px;
+    max-width: 100rem;
+    width: 20rem;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    background-color: rgba(152, 33, 12, 0.4);;
+}
+.loser p{
+    margin-top: -2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: #6e2b199a;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-family: 'Inter';
+}
+
+.loser .btn_guardar{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    background: rgba(120,0,0,3.3);
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+    left: 5%;
+    right: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+  }
+  .copyright-text {
+    margin: -6rem 0rem 0rem 0rem;
+    padding: .2rem;
+    text-shadow: 0.0625rem 0 0 white;
+  }
+
+@media (min-width: 1000px) and (max-width: 3000px) {
+    body{
+        position: relative;
+        width: auto;
+        height: 650px;
+        background: #F3F5FC;
+        background-image: url(../img/vistas_4.png);
+        background-size: cover;
+    }
+    header{
+        position: absolute;
+        width: 100%;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .vector{
+        width: 120px;
+        height: 48px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-color: transparent;
+    }
+    
+    header .titulo{
+        font-size: 1.7rem;
+        font-family: 'Inter';
+        font-style: normal;
+        background-color: #FFFFFF;
+        padding: 1rem 1rem;
+        left: 22rem;
+        bottom: 1.3rem;
+        position: absolute;
+        border-radius: 1rem;
+    }
+    
+    
+    .botonera_inicio{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .btn_iniciar{
+        width: 300px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        background: #300a71b3;
+        border-radius: 24px;
+        position: absolute;
+    }
+
+    .btn_agregar{
+        box-sizing: border-box;
+        padding: 24px;
+        gap: 8px;
+        position: absolute;
+        width: 260px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        position: relative;
+    }
+    
+    .container_inputInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+        position: absolute;
+        width: 120px;
+        height: 48px;
+        left: 40px;
+        top: 40px;
+    }
+
+    .input_palabra{
+        width: 299px;
+        height: 48px;
+        left: 376px;
+        top: 256px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+    }
+    .info{
+        position: relative;
+        width: 3.43rem;
+        height: 4.8rem;
+        left: 1.6rem;
+        top: 15.2rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 150%;
+        color: var(--dark-blue-300);
+    }
+    
+    .input{
+        max-width: 74%;
+        height: 6.3rem;
+        top: 29.2rem;
+        margin: 0rem -4rem 0rem -2rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 150%;
+        border: none;
+        padding: 2rem;
+        background-color: #FFFFFF;
+        border-radius: 3.2rem;
+    } 
+
+    .input2{
+        display: flex;
+        position: relative;
+        max-width: 2%;
+        height: 2rem;
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 150%;
+        border: none;
+        padding: 2rem;
+        top: -4rem;
+        left: 1rem;
+        background-color: #FFFFFF;
+        border-radius: 3.2rem;
+    } 
+
+    .text_area{
+        display: none;
+    }
+
+    .info_interno{
+        width: 30rem;
+        height: 1.8rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 150%;
+        color: #ffffff;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        position: absolute;
+        top: -3rem;
+        left: 0rem;
+    }
+    .botonera_juego .info_interno{
+        width: 30rem;
+        height: 1.8rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 150%;
+        color: #ffffff;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        position: absolute;
+        top: -3rem;
+        left: -16rem;
+    }
+    
+    .botonera_palabra{
+        display: none;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        top: 0px;
+        justify-content: center;
+        align-self: center;
+        max-width: 68rem;
+    }
+    
+    .botonera_palabra .btn_guardar{
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+        gap: 8px;
+        height: 67px;
+        background: #300a71b3;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        max-width: 33rem;
+    }
+    .botonera_palabra .btn_cancelar{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+        gap: 8px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+        max-width: 33rem;
+    }
+    .container_figuras{
+        height: 1200px;
+        left: 860px;
+    }
+    .seccion_muneco{
+        position: absolute;
+        left: 573px;
+        top: 148px;
+    }
+    
+    .keyboard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        left: 488px;
+        top: 628px;
+    }
+    
+    .botonera_juego{
+        display: none;
+        flex-direction: row;
+        padding: 0px;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botonera_juego .btn_guardar{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        
+        width: 332px;
+        height: 67px;
+        background: #300a71b3;
+        border-radius: 24px; 
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .botonera_juego .btn_cancelar{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        width: 332px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+    }
+
+    footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        font-size: 1.7rem;
+        left: 7%;
+        right: 7%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+    }
+    .copyright-text {
+        margin: -4rem 0rem 0rem 0rem;
+        padding: .2rem;
+        text-shadow: 0.0625rem 0 0 white;
+    }
+}
+
+/* Media para Tablet */
+@media (min-width: 700px) and (max-width: 1000px) {
+
+    body{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #F3F5FC;
+        background-image: url(../img/vistas_3.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+    
+    header{
+    position: absolute;
+    width: 100%;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+    }
+
+    .vector{
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 7.3%;
+        bottom: 88.09%;
+        background: #0A3871;
+        background-color: transparent;
+    }
+    
+    header .titulo{
+        font-size: 1.6rem;
+        font-family: 'Inter';
+        font-style: normal;
+        background-color: #FFFFFF;
+        padding: 1rem 1rem;
+        left: 10rem;
+        bottom: 2.9rem;
+        position: absolute;
+        border-radius: 1rem;
+    }
+    
+    
+    .botonera_inicio{
+        display: flex;
+        height: 158px;
+        margin: 0 auto;
+        top: -9rem;
+    }
+    
+    .btn_iniciar{
+        padding: 24px;
+        gap: 8px;
+        position: absolute;
+        background: #300a71b3;
+        border-radius: 24px;
+    }
+
+    .btn_agregar{
+        height: 19px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        color: #0A3871;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        left: 5rem;
+    }
+    
+    .input_palabra{
+        position: absolute;
+        width: 299px;
+        height: 48px;
+        left: 40px;
+        top: 240px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        position: absolute;
+        width: 115px;
+        height: 18px;
+        left: 40px;
+        top: 883px;
+    }
+
+    .input{
+        max-width: 33rem;
+        height: 48px;
+        /* left: 40px; */
+        top: 170px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        margin: 0rem 25% 0rem 25%;
+    } 
+    .text_area{
+        display: none;
+    }
+
+    .info_interno{
+        display: flex;
+        width: 30rem;
+        height: 1.8rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 150%;
+        color: #ffffff;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        position: absolute;
+        top: -3rem;
+        left: -19rem;
+        margin: 0.5rem 14% 0rem;
+    }
+    .botonera_juego .info_interno{
+        display: flex;
+        width: 30rem;
+        height: 1.8rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 150%;
+        color: #ffffff;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        position: absolute;
+        top: -3rem;
+        left: -6rem;
+        margin: 0.5rem 14% 0rem;
+    }
+    
+    .text_area .icono_exclamation{
+        width: 16px;
+        height: 16px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    
+    .botonera_palabra{
+        display: none;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botonera_palabra .btn_guardar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 24px;
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+        background: #300a71b3;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        max-width: 30rem;
+    }
+    .botonera_palabra .btn_cancelar{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 24px;
+        gap: 8px;
+        width: 332px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+        max-width: 30rem;
+    }
+    div#div_ahorcado {
+        display: none;
+        width: 30rem;
+        border: 1px solid #ff000045;
+        height: 45rem;
+        justify-content: center;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        left: 1rem;
+        border-radius: 2rem;
+    }
+    canvas {
+        width: 500px;
+        height: 370px;
+    } 
+
+    .seccion_muneco{
+        position: absolute;
+        width: 294px;
+        height: 360px;
+        left: 237px;
+        top: 240px;
+    }
+    
+    .keyboard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 464px;
+        height: 152px;
+        left: 152px;
+        top: 656px;
+    }
+    
+    .botonera_juego{
+        display: none;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 688px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botonera_juego .btn_guardar{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        width: 332px;
+        height: 67px;
+        background: #300a71b3;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .botonera_juego .btn_cancelar{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        width: 332px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+    }
+
+    footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -450px;
+        font-size: 1.7rem;
+        left: 7%;
+        right: 7%;
+      }
+
+      .copyright-text {
+        margin: auto;
+        padding: .2rem;
+        text-shadow: 0.0625rem 0 0 white;
+      }
+}
