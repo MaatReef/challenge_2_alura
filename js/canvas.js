@@ -29,29 +29,30 @@ function dibujarLinea(){
 function armarMunexo(){
     switch (contador) {
         case 4:
-            playSound(error);
+            sfx.error.play();
             poste();
             break;
         case 3:
-            playSound(error);
+            sfx.error.play();
             soporte();
             break;
         case 2:
-            playSound(error);
+            sfx.error.play();
             cabeza();
             break;
         case 1:
-            playSound(error);
+            sfx.error.play();
             torso();
             break;
         case 0:
-            playSound(error);
+            sfx.error.play();
             pies();
+            sfx.juego.stop();
             div_letra.style.display = "none";
             canvas_juego.style.display = "none";
             btnera_juego.style.display = "none";
             aviso_losser.style.display = "flex";
-            playSound(gameover);
+            sfx.gameover.play();
             break;
     }
 }

@@ -13,32 +13,40 @@
 // - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
 
 //Sonidos
-let error = new Audio("../music/auch.mp3");
-let win = new Audio("../music/clapclap.mp3");
-let gameover = new Audio("../music/dameover.mp3");
-let juego = new Audio("../music/eleccion.mp3");
-let eleccion = new Audio("../music/juego.mp3");
-let check = new Audio("../music/yes.mp3");
+// let error = new Audio("../music/auch.mp3");
+// let win = new Audio("../music/clapclap.mp3");
+// let gameover = new Audio("../music/dameover.mp3");
+// let juego = new Audio("../music/eleccion.mp3");
+// let eleccion = new Audio("../music/juego.mp3");
+// let check = new Audio("../music/yes.mp3");
 
-sounds();
+var sfx = {
+    error: new Howl({
+      src: ["../music/auch.mp3"],
+      volume: 0.3
+    }),
+    win: new Howl({
+      src: ["../music/clapclap.mp3"],
+      volume: 0.4
+    }),
+    gameover: new Howl({
+      src: ["../music/dameover.mp3"],
+      volume: 0.2
+    }),
+    juego: new Howl({
+      src: ["../music/eleccion.mp3"],
+      volume: 0.1
+    }),
+    eleccion: new Howl({
+      src: ["../music/juego.mp3"],
+      volume: 0.2
+    }),
+    check: new Howl({
+      src: ["../music/yes.mp3"],
+      volume: 0.3
+    })
+  };
 
-function sounds() {
-    error.volume = 0.3;
-    win.volume = 0.4;
-    gameover.volume = 0.2;
-    juego.volume = 0.1;
-    eleccion.volume = 0.2;
-    check.volume = 0.3;
-}
-  
-function playSound(sound) {
-    this.stopSound(sound);
-    sound.play();
-}
-function stopSound(sound) {
-    sound.pause();
-    sound.currentTime = 0;
-}
 
 //Selectores
 let palabras = ["VERDAD", "VALOR", "APTITUD", "FUERZA"];
@@ -84,7 +92,7 @@ function reiniciarJuegoDelay(){
     }, 3000);
 }
 function iniciarJuego(){
-    playSound(juego);
+    sfx.juego.play();
     escogerPalabraSecreta()
     dibujarCanvas()
     dibujarLinea()
@@ -141,7 +149,7 @@ function quitarBotonera(e){
         div_letra.style.display = "flex";
         iniciarJuego();
     } else if (e.classList.contains("btn_agregar")){
-        playSound(eleccion);
+        sfx.eleccion.play();
         input_palabra.style.display = "flex";
         btnera_principal.style.display = "none";
         footer.style.display = "none";
@@ -207,7 +215,7 @@ function letra_press(tecla_enviada, tecla_presionada){
 let correctas = [];
 let palabra_descompuesta = [];
 function dibujarLetra(correcta){
-    playSound(check);
+    sfx.check.play();
     let anchura = 600/palabrabraSecreta.length;
     for (let i = 0; i < palabrabraSecreta.length; i++){
         let reemplazar = palabrabraSecreta[i];
@@ -239,7 +247,8 @@ function ganastes(){
     let letras_correctas = JSON.stringify(correctas);
     let palabra_entera = JSON.stringify(palabra_descompuesta);
     if(letras_correctas.length == palabra_entera.length){
-        playSound(win);
+        sfx.juego.stop();
+        sfx.win.play();
         let confetti = new Confetti('demo');
         confetti.setCount(75);
         confetti.setSize(1);
