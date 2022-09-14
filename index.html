@@ -8,20 +8,8 @@
     <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 </head>
 <body>
-
-    <!-- <header>
-        <img src="img/logo_alura.svg" alt="" class="vector">
-        <h1 class="titulo">Ahorcado - Challenge</h1>
-    </header>
-
-    <main class="botonera">
-        <a href="juego.html"><input type="button" class="btn_iniciar" value="Iniciar Juego" id="iniciar_juego"></a>
-        <a href="palabra.html"><input type="button" class="btn_agregar" value="Agregar nueva palabra"></a>
-    </main> -->
-
 
     <header id="header">
         <img src="img/logo_alura.svg" alt="logo" class="vector">
@@ -30,83 +18,46 @@
 
     <main>
         <div id="div_ahorcado" class="canvas">
-            <!-- Canvas -->
-            
             <canvas id="horca" class="horca" width="1200px" height="800px"></canvas>
             <div class="subrayado">
-                
             </div>
         </div>
-    
 
         <div class="text_letra" id="text_letra">
             <input class="input2 input_letra" id="input_letra" style="text-transform: uppercase;" onkeydown="captarTecla(event)"></input>
-            <!-- <p class="info_interno"><img src="img/icono.svg" alt="" class="icono_exclamation"> Máximo de 8 Letras</p> -->
         </div>
-
 
         <div class="text_area" id="text_area">
             <input class="input input_palabra" id="input_palabra" name="Ingrese texto"  placeholder="¿Palabra?" onkeydown="chequeando(event)"></input>
         </div>
 
-
         <div class="botonera_inicio" id="btnera_principal">
-
-                <!-- Boton del input -->    
                 <input type="button" class="btn_iniciar" value="Iniciar Juego" id="btn_iniciar" onclick="filtrarBoton(btn_iniciar)">
-
                 <input type="button" class="btn_agregar" value="Agregar nueva palabra" id="btn_guardar" onclick="filtrarBoton(btn_guardar)">
-
         </div>
 
         <div class="botonera_palabra" id="btnera_palabra">
             <p class="info_interno">Máximo de 8 Letras</p>
-
-                <!-- Boton del input -->    
                 <input type="button" class="btn_guardar" value="Guardar y empezar" id="btn_guardarPalabra" onclick="guardarPalabra()"> 
-                <!-- <input type="button" class="btn_guardar" value="Guardar y empezar" id="btn_guardarPalabra"> -->
-
-
                 <input type="button" class="btn_cancelar" value="Cancelar" id="btn_cancelar" onclick="filtrarBoton(btn_cancelar)">
-
         </div>
 
         <div class="botonera_juego" id="btnera_juego">
-            <p class="info_interno">¡Tienes 5 Chances!</p>
-
-                <!-- Boton del input -->    
+            <p class="info_interno">¡Tienes 5 Chances!</p> 
                 <input type="button" class="btn_guardar"  value="Nuevo Juego" onclick="reiniciarJuego()"> 
-
                 <input type="button" class="btn_cancelar btn_desis" value="Desistir" id="btn_desistir" onclick="filtrarBoton(btn_desistir)">
-
         </div>
-
-
-
-
     </main>
 
 
     <div class="winner" id="aviso_winner">
-
         <p>¡GANASTE!</p>
-
-            <!-- Boton del input -->    
             <input type="button" id="demo" class="btn_guardar"  value="Nuevo Juego" onclick="reiniciarJuegoDelay()"> 
-
-            <!-- <input type="button" class="btn_cancelar btn_desis" value="Desistir" id="btn_desistir" onclick="filtrarBoton(btn_desistir)"> -->
-
     </div>
 
     <div class="loser" id="aviso_loser">
-
-        <p>¡PERDISTE!</p>
-
-        <!-- Boton del input -->    
+        <p>¡PERDISTE!</p> 
         <input type="button" class="btn_guardar"  value="Nuevo Juego" onclick="reiniciarJuego()"> 
-
-        <!-- <input type="button" class="btn_cancelar btn_desis" value="Desistir" id="btn_desistir" onclick="filtrarBoton(btn_desistir)"> -->
-
     </div>
 
     <footer id="footer">
