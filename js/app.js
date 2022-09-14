@@ -264,7 +264,7 @@ var sfx = {
       volume: 0.1
     }),
     eleccion: new Howl({
-      src: ["music/juego.mp3"],
+      src: ["https://github.com/MaatReef/challenge_2_alura/blob/main/music/juego.mp3"],
       volume: 0.2
     }),
     check: new Howl({
