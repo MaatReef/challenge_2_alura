@@ -12,37 +12,8 @@
 // Extras:
 // - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
 
-
-var sfx = {
-    error: new Howl({
-      src: ["../music/auch.mp3"],
-      volume: 0.3
-    }),
-    win: new Howl({
-      src: ["../music/clapclap.mp3"],
-      volume: 0.4
-    }),
-    gameover: new Howl({
-      src: ["../music/dameover.mp3"],
-      volume: 0.2
-    }),
-    juego: new Howl({
-      src: ["../music/eleccion.mp3"],
-      volume: 0.1
-    }),
-    eleccion: new Howl({
-      src: ["../music/juego.mp3"],
-      volume: 0.2
-    }),
-    check: new Howl({
-      src: ["../music/yes.mp3"],
-      volume: 0.3
-    })
-  };
-
-
-//Selectores
 let palabras = ["VERDAD", "VALOR", "APTITUD", "FUERZA"];
+//Selectores
 let tablero = document.getElementById("horca").getContext("2d");
 let input_palabra = document.getElementById("text_area");
 let div_letra = document.getElementById("text_letra");
@@ -68,7 +39,6 @@ let btn_guardar = document.getElementById("btn_guardar");
 let btn_cancelar = document.getElementById("btn_cancelar");
 let btn_desistir = document.getElementById("btn_desistir");
 
-// Palabra Secreta
 function escogerPalabraSecreta(){
     let palabra = palabras[Math.floor(Math.random() * palabras.length)];
     palabrabraSecreta = palabra;
@@ -274,3 +244,31 @@ function dibujarLetraIncorrecta(equivocada){
     armarMunexo()
     document.getElementsByClassName("input2")[0].value = "";
 }
+
+
+var sfx = {
+    error: new Howl({
+      src: ["../music/auch.mp3"],
+      volume: 0.3
+    }),
+    win: new Howl({
+      src: ["../music/clapclap.mp3"],
+      volume: 0.4
+    }),
+    gameover: new Howl({
+      src: ["../music/dameover.mp3"],
+      volume: 0.2
+    }),
+    juego: new Howl({
+      src: ["../music/eleccion.mp3"],
+      volume: 0.1
+    }),
+    eleccion: new Howl({
+      src: ["../music/juego.mp3"],
+      volume: 0.2
+    }),
+    check: new Howl({
+      src: ["../music/yes.mp3"],
+      volume: 0.3
+    })
+  };
