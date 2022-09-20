@@ -36,7 +36,7 @@ palabra_guardada.addEventListener('touchstart', function(event){
 
      // }
 
-     chequeando(event);
+     chequeando(event);  
  }, false);
 
 function escogerPalabraSecreta(){
