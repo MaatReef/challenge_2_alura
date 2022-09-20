@@ -88,6 +88,8 @@ header .titulo{
     top: 281px;
     background: #300a71b3;
     border-radius: 24px;
+    font-size: 2.2rem;
+    color: white;
 }
 
 .btn_agregar{
@@ -246,6 +248,7 @@ header .titulo{
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    color: white;
 }
 .botonera_palabra .btn_cancelar{
     box-sizing: border-box;
@@ -338,6 +341,7 @@ canvas {
     flex-grow: 0;
     justify-content: center;
     max-width: 30rem;
+    color: white;
 }
 .botonera_juego .btn_cancelar{
     box-sizing: border-box;
