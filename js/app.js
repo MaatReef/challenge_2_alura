@@ -28,15 +28,12 @@ let btn_cancelar = document.getElementById("btn_cancelar");
 let btn_desistir = document.getElementById("btn_desistir");
 
 palabra_guardada.addEventListener('touchstart', function(event){
-     // //Comprobamos si hay varios eventos del mismo tipo
-     // if (event.targetTouches.length == 1) { 
-     // var touch = event.targetTouches[0]; 
-     // // con esto solo se procesa UN evento touch
-     // alert(" se ha producido un touchstart en las siguientes cordenas: X " + touch.pageX + " en Y " + touch.pageY);
-
-     // }
-
+     
      chequeando(event);  
+ }, false);
+ input_letra.addEventListener('touchstart', function(event){
+     
+    captarTecla(event);;  
  }, false);
 
 function escogerPalabraSecreta(){
