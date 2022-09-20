@@ -4,7 +4,7 @@ let tablero = document.getElementById("horca").getContext("2d");
 let input_palabra = document.getElementById("text_area");
 let div_letra = document.getElementById("text_letra");
 let input_letra = document.getElementById("input_letra").value;
-let input_letraMovil = document.getElementById("input_letra");
+// let input_letraMovil = document.getElementById("input_letra");
 let canvas_juego = document.getElementById("div_ahorcado");
 let cabecera = document.getElementById("header");
 let aviso_winner = document.getElementById("aviso_winner");
@@ -27,17 +27,17 @@ let btn_cancelar = document.getElementById("btn_cancelar");
 let btn_desistir = document.getElementById("btn_desistir");
 
 
-input_letraMovil.addEventListener('touchstart', function(event){
-    // //Comprobamos si hay varios eventos del mismo tipo
-    // if (event.targetTouches.length == 1) { 
-    // var touch = event.targetTouches[0]; 
-    // // con esto solo se procesa UN evento touch
-    // alert(" se ha producido un touchstart en las siguientes cordenas: X " + touch.pageX + " en Y " + touch.pageY);
+// input_letraMovil.addEventListener('touchstart', function(event){
+//     // //Comprobamos si hay varios eventos del mismo tipo
+//     // if (event.targetTouches.length == 1) { 
+//     // var touch = event.targetTouches[0]; 
+//     // // con esto solo se procesa UN evento touch
+//     // alert(" se ha producido un touchstart en las siguientes cordenas: X " + touch.pageX + " en Y " + touch.pageY);
 
-    // }
+//     // }
 
-    captarTecla(event);
-}, false);
+//     captarTecla(event);
+// }, false);
 
 function escogerPalabraSecreta(){
     let palabra = palabras[Math.floor(Math.random() * palabras.length)];

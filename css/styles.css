@@ -457,6 +457,7 @@ footer {
     margin: -6rem 0rem 0rem 0rem;
     padding: .2rem;
     text-shadow: 0.0625rem 0 0 white;
+    color: white;
   }
 
 @media (min-width: 1000px) and (max-width: 3000px) {
