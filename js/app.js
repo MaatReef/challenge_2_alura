@@ -4,8 +4,6 @@ let tablero = document.getElementById("horca").getContext("2d");
 let input_palabra = document.getElementById("text_area");
 let div_letra = document.getElementById("text_letra");
 let input_letra = document.getElementById("input_letra").value;
-let palabra_guardada = document.getElementById("input_palabra");
-// let input_letraMovil = document.getElementById("input_letra");
 let canvas_juego = document.getElementById("div_ahorcado");
 let cabecera = document.getElementById("header");
 let aviso_winner = document.getElementById("aviso_winner");
@@ -26,15 +24,6 @@ let btn_agregar = document.getElementById("btn_agregar");
 let btn_guardar = document.getElementById("btn_guardar");
 let btn_cancelar = document.getElementById("btn_cancelar");
 let btn_desistir = document.getElementById("btn_desistir");
-
-palabra_guardada.addEventListener('touchstart', function(event){
-     chequeando(event);  
-}, false);
-
-input_letra.addEventListener('touchstart', function(event){
-     
-    captarTecla(event);;  
-}, false);
 
 function escogerPalabraSecreta(){
     let palabra = palabras[Math.floor(Math.random() * palabras.length)];
@@ -59,7 +48,7 @@ function iniciarJuego(){
 }
 
 function guardarPalabra(){
-    // let palabra_guardada = document.getElementById("input_palabra").value;
+    let palabra_guardada = document.getElementById("input_palabra").value;
 
     if(palabra_guardada.length > 8){
         swal({
